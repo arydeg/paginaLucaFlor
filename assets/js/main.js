@@ -4,6 +4,19 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+		//click img
+		
+			function abrir(img){
+				console.log(img);
+				
+				var etiquetaImg = '<img style="vertical-align:middle;" class="image main" src="'+img+'" />';
+				console.log(etiquetaImg);
+				var divImg = document.getElementById("divImgGrande");
+				divImg.innerHTML = etiquetaImg;
+			}
+
+
+
 (function($) {
 
 	var	$window = $(window),
@@ -290,14 +303,14 @@
 			$main_articles.each(function() {
 
 				var $this = $(this);
-
+/*
 				// Close.
 					$('<div class="close">Close</div>')
 						.appendTo($this)
 						.on('click', function() {
 							location.hash = '';
 						});
-
+*/
 				// Prevent clicks from inside article from bubbling.
 					$this.on('click', function(event) {
 						event.stopPropagation();
@@ -309,6 +322,7 @@
 			$body.on('click', function(event) {
 
 				// Article visible? Hide.
+					
 					if ($body.hasClass('is-article-visible'))
 						$main._hide(true);
 
@@ -397,5 +411,6 @@
 					$window.on('load', function() {
 						$main._show(location.hash.substr(1), true);
 					});
+					
 
 })(jQuery);

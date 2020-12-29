@@ -36,7 +36,7 @@
 								<li><a href="#work">Proyectos</a></li>
 								<li><a href="#about">Nosotros</a></li>
 								<li><a href="#contact">Contacto</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
 					</header>
@@ -46,6 +46,7 @@
 
 						<!-- Intro -->
 							<article id="intro">
+							<a href="#" class="close">X</a>
 								<h2 class="major">Intro</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
 								<p>Concebimos nuestros proyectos de manera integral, acompañándote en cada paso.
@@ -68,13 +69,42 @@
 
 						<!-- Work -->
 							<article id="work">
+							<a href="#" class="close">X</a>
 								<h2 class="major">Proyectos</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
 								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+									<div class="table-wrapper">
+										<table class="table-fotos">
+										<p style="margin:0;padding:0;"> Proyecto hecho en puerto madero con invernacion y mucho calor</p>
+											<tbody>
+												<tr>
+													<td><a href="#modal"><img src="images/fot0.jpg" width="330px" 
+													onclick="abrir('images/fot0.jpg')";></td>
+													<td><a href="#modal"><img src="images/fot1.jpg" width="330px" 
+													onclick="abrir('images/fot1.jpg')"></a></td>
+												</tr>
+												<tr>
+													<td><a href="#modal"><img src="images/fot2.jpg" width="330px" 
+													onclick="abrir('images/fot2.jpg')"></a></td>
+													<td><a href="#modal"><img src="images/fot3.jpg" width="330px" 
+													onclick="abrir('images/fot3.jpg')"></a></td>
+												<tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- onclick="window.open(this.src)"-->
+							</article>
+							<article id="modal">
+							<div id="divImgGrande">
+							
+							</div>
+							<!--<img src="images/fot1.jpg" width="330px" style="vertical-align:middle;" class="image main">-->
+							<a href="#work" class="close">X</a>
 							</article>
 
 						<!-- About -->
 							<article id="about">
+							<a href="#" class="close">X</a>
 								<h2 class="major">Nosotros</h2>
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
 								<p>
@@ -90,6 +120,7 @@
 
 						<!-- Contact -->
 							<article id="contact">
+							<a href="#" class="close">X</a>
 								<h2 class="major">Contacto</h2>
 								<form method="post" action="enviar2.php">
 									<div class="fields">
@@ -242,6 +273,42 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 									</div>
 
 									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody><h4>Alternate</h4>
 									<div class="table-wrapper">
 										<table class="alt">
 											<thead>
