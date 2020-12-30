@@ -4,16 +4,47 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-		//click img
-		
-			function abrir(img){
+		//texto descripcion
+		var descr0 = `									
+			<h3>Texto 0 Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</h3>
+		`;
+		var descr1 = `									
+			<h3>Texto 1 Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</h3>
+		`;
+		var descr2 = `									
+			<h3>Texto 2 Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</h3>
+		`;
+		var descr3 = `									
+			<h3>Texto 3 Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</h3>
+		`;
+
+		//click img		
+			function abrir(img,n){
+				var descrpcion = obtenerDescripcion(n);
 				console.log(img);
 				
-				var etiquetaImg = '<img style="vertical-align:middle;" class="image main" src="'+img+'" />';
+				var etiquetaImg = '<img class="image main" src="'+img+'"/><br> <h3>'+descrpcion+'</h3>';
 				console.log(etiquetaImg);
 				var divImg = document.getElementById("divImgGrande");
 				divImg.innerHTML = etiquetaImg;
 			}
+		
+		function obtenerDescripcion(n){
+			switch(n){
+				case 0:
+					return descr0;
+				break;
+				case 1:
+					return descr1;
+				break;
+				case 2:
+					return descr2;
+				break;
+				case 3:
+					return descr3;
+				break;
+			}
+		}
 
 
 

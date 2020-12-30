@@ -2,6 +2,18 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
 
+.slider{
+	width:100%;
+	margin:auto;
+}
+.slider ul{
+	padding:0;
+}
+.slider li{
+	display:fle;
+	list-style:none;
+}
+
 
 /*
 	Dimension by HTML5 UP
@@ -14,7 +26,7 @@ iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, fieldset,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
@@ -35,6 +47,9 @@ body {
 	line-height: 1;
 }
 
+ol, ul {
+	list-style: none;
+}
 
 blockquote, q {
 	quotes: none;
@@ -597,7 +612,6 @@ input, select, textarea {
 			padding: 0;
 		}
 
-
 /* Icon */
 
 	.icon {
@@ -720,7 +734,7 @@ input, select, textarea {
 
 		}
 
-/* List 
+/* List */
 
 	ol {
 		list-style: decimal;
@@ -771,7 +785,7 @@ input, select, textarea {
 			margin-left: 2rem;
 		}
 
-/* Actions 
+/* Actions */
 
 	ul.actions {
 		display: -moz-flex;
@@ -892,7 +906,7 @@ input, select, textarea {
 						}
 
 		}
-*/
+
 /* Icons */
 
 	ul.icons {
@@ -1671,7 +1685,7 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
-		
+	
 	.slider {
 	width: 100%;
 	margin: auto;
